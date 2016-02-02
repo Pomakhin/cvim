@@ -152,24 +152,15 @@ ios::|PICK|<CURSOR>
 == ENDTEMPLATE ==
 
 == C++.class == map:+c, shortcut:c ==
-/*
- * =====================================================================================
- *        Class:  |?CLASSNAME:c|
- *  Description:  <CURSOR>
- * =====================================================================================
- */
-class |CLASSNAME|
+#pragma once
+
+class |?CLASSNAME:c|
 {
 	public:
 		/* ====================  LIFECYCLE     ======================================= */
-		|CLASSNAME| ();                             /* constructor */
+		|CLASSNAME|();
 
 		/* ====================  ACCESSORS     ======================================= */
-
-		/* ====================  MUTATORS      ======================================= */
-
-		/* ====================  OPERATORS     ======================================= */
-
 	protected:
 		/* ====================  METHODS       ======================================= */
 
@@ -182,35 +173,24 @@ class |CLASSNAME|
 
 }; /* -----  end of class |CLASSNAME|  ----- */
 
+
 == C++.class using new == map:+cn, shortcut:n ==
-/*
- * =====================================================================================
- *        Class:  |?CLASSNAME:c|
- *  Description:  <CURSOR>
- * =====================================================================================
- */
-class |CLASSNAME|
+#pragma once
+
+class |?CLASSNAME:c|
 {
-  public:
-    /* ====================  LIFECYCLE     ======================================= */
-    |CLASSNAME| ();                             /* constructor      */
-    |CLASSNAME| ( const |CLASSNAME| &other );   /* copy constructor */
-    ~|CLASSNAME| ();                            /* destructor       */
+	public:
+		/* ====================  LIFECYCLE     ======================================= */
+        static |CLASSNAME| *create();
 
 		/* ====================  ACCESSORS     ======================================= */
-
-		/* ====================  MUTATORS      ======================================= */
-
-		/* ====================  OPERATORS     ======================================= */
-
-    |CLASSNAME|& operator = ( const |CLASSNAME| &other ); /* assignment operator */
-
-  protected:
+	protected:
+        |CLASSNAME|();
 		/* ====================  METHODS       ======================================= */
 
 		/* ====================  DATA MEMBERS  ======================================= */
 
-  private:
+	private:
 		/* ====================  METHODS       ======================================= */
 
 		/* ====================  DATA MEMBERS  ======================================= */
@@ -314,53 +294,24 @@ class |CLASSNAME|
 }  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- */
 
 == C++.IMPLEMENTATION.class using new == map:+icn , shortcut:n ==
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  |?CLASSNAME:c|
- *      Method:  |CLASSNAME|
- * Description:  constructor
- *--------------------------------------------------------------------------------------
- */
-|CLASSNAME|::|CLASSNAME| ()
+#include "|CLASSNAME|.h"
+#include <drako/DrakoFormat.h>
+#include <log.h>
+
+|CLASSNAME|::|CLASSNAME|()
 {<CURSOR>
-}  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- */
+}
 
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  |CLASSNAME|
- *      Method:  |CLASSNAME|
- * Description:  copy constructor
- *--------------------------------------------------------------------------------------
- */
-|CLASSNAME|::|CLASSNAME| ( const |CLASSNAME| &other )
+|CLASSNAME| *|CLASSNAME|::create()
 {
-}  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (copy constructor)  ----- */
-
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  |CLASSNAME|
- *      Method:  ~|CLASSNAME|
- * Description:  destructor
- *--------------------------------------------------------------------------------------
- */
-|CLASSNAME|::~|CLASSNAME| ()
-{
-}  /* -----  end of method |CLASSNAME|::~|CLASSNAME|  (destructor)  ----- */
-
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  |CLASSNAME|
- *      Method:  operator =
- * Description:  assignment operator
- *--------------------------------------------------------------------------------------
- */
-|CLASSNAME|&
-|CLASSNAME|::operator = ( const |CLASSNAME| &other )
-{
-  if ( this != &other ) {
-  }
-  return *this;
-}  /* -----  end of method |CLASSNAME|::operator =  (assignment operator)  ----- */
+    |CLASSNAME| *ret = new |CLASSNAME|();
+    if (ret)
+    {
+        ret->autorelease();
+        return ret;
+    }
+    return NULL;
+}
 
 == C++.IMPLEMENTATION.method == map:+im , shortcut:m ==
 void<CURSOR>
