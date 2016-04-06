@@ -282,16 +282,13 @@ class |CLASSNAME|
 }; /* -----  end of class |CLASSNAME|  ----- */
 
 == C++.IMPLEMENTATION.class == map:+ic , shortcut:c ==
-/*
- *--------------------------------------------------------------------------------------
- *       Class:  |?CLASSNAME:c|
- *      Method:  |CLASSNAME|
- * Description:  constructor
- *--------------------------------------------------------------------------------------
- */
-|CLASSNAME|::|CLASSNAME| ()
+#include "|CLASSNAME|.h"
+#include <drako/DrakoFormat.h>
+#include <log.h>
+
+|CLASSNAME|::|CLASSNAME|()
 {<CURSOR>
-}  /* -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- */
+}
 
 == C++.IMPLEMENTATION.class using new == map:+icn , shortcut:n ==
 #include "|CLASSNAME|.h"
