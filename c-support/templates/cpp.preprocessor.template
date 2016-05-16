@@ -86,8 +86,6 @@
 == Preprocessor.line == map:pli, shortcut:l ==
 #line	<CURSOR>			// 
 §-------------------------------------------------------------------------
-== Preprocessor.pragma == map:pp, shortcut:p ==
-#pragma	<CURSOR>			// 
 §-------------------------------------------------------------------------
 == Preprocessor.warning == map:pw, shortcut:w ==
 #warning	<CURSOR>			/*  */

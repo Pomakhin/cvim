@@ -1288,7 +1288,6 @@ Legend:  (i) insert mode, (n) normal mode, (v) visual mode
      \pind     #ifndef #def #endif                 (n,v,i)
      \pe       #error                              (n,i)
      \pl       #line                               (n,i)
-     \pp       #pragma                             (n,i)
      \pw       #warning                            (n,i)
      \pi0      #if 0 #endif                        (n,v,i)
      \pr0      remove #if 0 #endif                 (n,i)
