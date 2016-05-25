@@ -174,6 +174,30 @@ class |?CLASSNAME:c|
 }; /* -----  end of class |CLASSNAME|  ----- */
 
 
+== C++.class derived == map:+cd, shortcut:c ==
+#pragma once
+
+class |?CLASSNAME:c| : public |?BASECLASSNAME|
+{
+	public:
+		/* ====================  LIFECYCLE     ======================================= */
+		|CLASSNAME|();
+
+		/* ====================  ACCESSORS     ======================================= */
+	protected:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+	private:
+        typedef |BASECLASSNAME| base;
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+}; /* -----  end of class |CLASSNAME|  ----- */
+
+
 == C++.class using new == map:+cn, shortcut:n ==
 #pragma once
 
@@ -191,6 +215,30 @@ class |?CLASSNAME:c|
 		/* ====================  DATA MEMBERS  ======================================= */
 
 	private:
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+}; /* -----  end of class |CLASSNAME|  ----- */
+
+== C++.class derived using new  == map:+cdn, shortcut:n ==
+#pragma once
+
+class |?CLASSNAME:c| : public |?BASECLASSNAME|
+{
+	public:
+		/* ====================  LIFECYCLE     ======================================= */
+        static |CLASSNAME| *create();
+
+		/* ====================  ACCESSORS     ======================================= */
+	protected:
+        |CLASSNAME|();
+		/* ====================  METHODS       ======================================= */
+
+		/* ====================  DATA MEMBERS  ======================================= */
+
+	private:
+        typedef |BASECLASSNAME| base;
 		/* ====================  METHODS       ======================================= */
 
 		/* ====================  DATA MEMBERS  ======================================= */
