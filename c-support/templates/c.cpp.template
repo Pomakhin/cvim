@@ -190,7 +190,7 @@ class |?CLASSNAME:c| : public |?BASECLASSNAME|
 		/* ====================  DATA MEMBERS  ======================================= */
 
 	private:
-        typedef |BASECLASSNAME| base;
+        typedef |BASECLASSNAME| Base;
 		/* ====================  METHODS       ======================================= */
 
 		/* ====================  DATA MEMBERS  ======================================= */
@@ -238,7 +238,7 @@ class |?CLASSNAME:c| : public |?BASECLASSNAME|
 		/* ====================  DATA MEMBERS  ======================================= */
 
 	private:
-        typedef |BASECLASSNAME| base;
+        typedef |BASECLASSNAME| Base;
 		/* ====================  METHODS       ======================================= */
 
 		/* ====================  DATA MEMBERS  ======================================= */
