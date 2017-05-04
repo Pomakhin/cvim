@@ -6,7 +6,7 @@ SetMacro( 'AUTHOR',      'Mikhail Pomakhin' )
 SetMacro( 'AUTHORREF',   '' )
 SetMacro( 'COMPANY',     'Game Insight' )
 SetMacro( 'COPYRIGHT',   '' )
-SetMacro( 'EMAIL',       'pomahin@q1.ru' )
+SetMacro( 'EMAIL',       'pomahin@game-insight.com' )
 SetMacro( 'LICENSE',     '' )
 SetMacro( 'ORGANIZATION','Game Insight' )
 
