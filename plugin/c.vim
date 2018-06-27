@@ -2599,17 +2599,17 @@ function! s:CreateAdditionalMaps ()
 	"  Ctrl-F9   run executable
 	" Shift-F9   command line arguments
 	"
-	noremap  <buffer>  <silent>  <A-F9>       :call C_Compile()<CR>:call C_HlMessage()<CR>
-	inoremap <buffer>  <silent>  <A-F9>  <C-C>:call C_Compile()<CR>:call C_HlMessage()<CR>
-	"
-	noremap  <buffer>  <silent>    <F9>       :call C_Link()<CR>:call C_HlMessage()<CR>
-	inoremap <buffer>  <silent>    <F9>  <C-C>:call C_Link()<CR>:call C_HlMessage()<CR>
-	"
-	noremap  <buffer>  <silent>  <C-F9>       :call C_Run()<CR>
-	inoremap <buffer>  <silent>  <C-F9>  <C-C>:call C_Run()<CR>
-	"
-	noremap  <buffer>            <S-F9>       :CCmdlineArgs<Space>
-	inoremap <buffer>            <S-F9>  <C-C>:CCmdlineArgs<Space>
+"	noremap  <buffer>  <silent>  <A-F9>       :call C_Compile()<CR>:call C_HlMessage()<CR>
+"	inoremap <buffer>  <silent>  <A-F9>  <C-C>:call C_Compile()<CR>:call C_HlMessage()<CR>
+"	"
+"	noremap  <buffer>  <silent>    <F9>       :call C_Link()<CR>:call C_HlMessage()<CR>
+"	inoremap <buffer>  <silent>    <F9>  <C-C>:call C_Link()<CR>:call C_HlMessage()<CR>
+"	"
+"	noremap  <buffer>  <silent>  <C-F9>       :call C_Run()<CR>
+"	inoremap <buffer>  <silent>  <C-F9>  <C-C>:call C_Run()<CR>
+"	"
+"	noremap  <buffer>            <S-F9>       :CCmdlineArgs<Space>
+"	inoremap <buffer>            <S-F9>  <C-C>:CCmdlineArgs<Space>
 	"
 
 	" ---------- KEY MAPPINGS : MENU ENTRIES -------------------------------------
