@@ -45,8 +45,7 @@
 //
 //        Created:  |DATE| |TIME|
 //
-//         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
-//   Organization:  |ORGANIZATION|
+//         Author:  |AUTHOR| , |EMAIL|
 //
 // =====================================================================================
 == Comments.file description header == map:cfdh, shortcut:h, start, noindent ==
@@ -58,8 +57,7 @@
 //
 //        Created:  |DATE| |TIME|
 //
-//         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
-//   Organization:  |ORGANIZATION|
+//         Author:  |AUTHOR| , |EMAIL|
 //
 // =====================================================================================
 == ENDTEMPLATE ==
